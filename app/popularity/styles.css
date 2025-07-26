@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Scoped chart colors using RGB fallback to prevent html2canvas errors */
+#trend-chart {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(38, 38, 38);
+  --card: rgb(255, 255, 255);
+  --card-foreground: rgb(38, 38, 38);
+  --border: rgb(235, 235, 235);
+  --ring: rgb(180, 180, 180);
+
+  --chart-1: rgb(250, 180, 80);
+  --chart-2: rgb(100, 170, 255);
+  --chart-3: rgb(70, 110, 255);
+  --chart-4: rgb(255, 170, 70);
+  --chart-5: rgb(255, 140, 50);
+}
+
+/* Optional dark mode override for chart only */
+.dark #trend-chart {
+  --background: rgb(38, 38, 38);
+  --foreground: rgb(250, 250, 250);
+  --card: rgb(64, 64, 64);
+  --card-foreground: rgb(250, 250, 250);
+  --border: rgba(255, 255, 255, 0.1);
+  --ring: rgb(145, 145, 145);
+
+  --chart-1: rgb(120, 140, 255);
+  --chart-2: rgb(255, 210, 100);
+  --chart-3: rgb(255, 140, 50);
+  --chart-4: rgb(160, 130, 255);
+  --chart-5: rgb(240, 170, 90);
+}
